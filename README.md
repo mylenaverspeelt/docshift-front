@@ -1,7 +1,7 @@
 # DocShift
 
 <b>Description:</b> 
-0
+<br/>
 DocShift is a web application designed to facilitate seamless medical shift exchanges among healthcare professionals. It provides an intuitive platform for medical staff to coordinate and manage their work information efficiently, ensuring optimal coverage and flexibility in healthcare settings.
 
 <b>Key Features:</b>
@@ -13,7 +13,9 @@ New Medical Professional Registration: Easily add new healthcare professionals t
 <b>Technologies Used:</b>
 <br/>
 -Java
+<br/>
 -Primefaces
+<br/>
 -JDBC
 
 <b>Getting Started:</b>
