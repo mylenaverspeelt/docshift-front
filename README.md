@@ -1,5 +1,4 @@
-#doc-shift
-an app that manages and stores all shift-related medical information
+##doc-shift
 
 <b>Description:</b> 
 <br/>
