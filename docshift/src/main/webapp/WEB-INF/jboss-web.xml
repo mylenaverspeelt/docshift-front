@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<jboss-web>
+    <context-root>/docshift</context-root>
+</jboss-web>
