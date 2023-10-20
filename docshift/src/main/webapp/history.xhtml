@@ -7,8 +7,8 @@
 <f:view>
 
 	<h:head>
-		<title>Configurações</title>
-		<link rel="stylesheet" href="css/settings.css"></link>
+		<title>History</title>
+		<link rel="stylesheet" href="css/history.css"></link>
 		<link rel="stylesheet" href="css/index.css"></link>
 		<script type="text/javascript" src="scripts/index.js"></script>
 		<script src="https://kit.fontawesome.com/6a8f4de875.js"
@@ -16,7 +16,6 @@
 	</h:head>
 
 	<h:body>
-
 		<div id="screen">
 			<nav id="aside-menu">
 
@@ -41,18 +40,14 @@
 
 			</nav>
 
-			<section id="config-section">
-				<div class="config-options">
-					<i class="fas fa-toggle-on fa-3x"></i> <label>Modo Noturno</label>
-				</div>
-				<div class="config-options">
-					<i class="fas fa-text-height fa-3x"></i> <label>Tamanho da
-						Fonte</label>
-				</div>
+			<section id="main-section">
+				<section id="history-section">
+					<label class="date-label"> Selecione uma data: </label> <input
+						type="date" id="datepicker"></input>
+					<button class="search-button">Pesquisar</button>
+				</section>
 			</section>
 		</div>
-
 	</h:body>
-
 </f:view>
 </html>

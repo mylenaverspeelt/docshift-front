@@ -8,6 +8,7 @@
 	padding: 4rem;
 	border: 1px solid rgba(0, 0, 0, 0.13);
     display: flex;
+    background-color: var(--light-green);
 }
 
 .config-options{

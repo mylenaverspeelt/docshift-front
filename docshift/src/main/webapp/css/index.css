@@ -12,10 +12,11 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--super-light-green);
+    background-image: url("../bg-texture.png");
 }
 
 #aside-menu {
-    width: 10%;
+    max-width: 12%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,13 +28,12 @@ body {
 #main-section {
     width: 100%;
     margin: 2rem 4rem;
-    background-color: var(--super-light-green);
 }
 
 .menu-button {
     background-color: green;
     height: 100px;
-    width: 125px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,7 @@ body {
     color: white;
     padding: 5px;
     border: 1px solid var(--super-dark-green);
+    margin: 0 1rem;
 }
 
 .menu-button:hover {

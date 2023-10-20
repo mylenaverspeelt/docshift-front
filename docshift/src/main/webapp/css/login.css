@@ -1,12 +1,17 @@
 @import url("./colors.css");
-
 @import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+
+body {
+    font-family: 'Geologica', sans-serif;
+  }
 
 #login-section {
 	margin: auto;
 	border-radius: 8px;
 	padding: 4rem;
 	border: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: var(--light-green);
 }
 
 #login-section p {

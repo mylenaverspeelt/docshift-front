@@ -16,164 +16,146 @@
 	</h:head>
 
 	<h:body>
-  <div id="screen">
-        <nav id="aside-menu">
+		<div id="screen">
+			<nav id="aside-menu">
 
-            <div id="new-shift" class="menu-button" title="Novo Plantão">
-                <i class="far fa-calendar-plus menu-icon"></i>
-            </div>
+				<div id="new-patient" class="menu-button" title="Novo Paciente">
+					<i class="fas fa-user-plus menu-icon"></i>
+				</div>
 
-            <div id="shift-history" class="menu-button" title="Histórico">
-                <i class="far fa-calendar-alt menu-icon"></i>
-            </div>
+				<div id="shift-history" class="menu-button" title="Histórico">
+					<i class="far fa-calendar-alt menu-icon"></i>
+				</div>
 
-            <div id="new-doctor" class="menu-button" title="Cadastrar Novo Médico">
-                <i class="fas fa-user-md menu-icon"></i>
-            </div>
+				<div id="new-doctor" class="menu-button"
+					title="Cadastrar Novo Médico">
+					<i class="fas fa-user-md menu-icon"></i>
+				</div>
 
-            <div id="botao4" class="menu-button">
-                Mais um Botão
-            </div>
+				<div id="botao4" class="menu-button">Mais um Botão</div>
 
-            <div id="config" class="menu-button" title="Configurações">
-                <i class="fas fa-cogs menu-icon"></i>
-            </div>
+				<div id="config" class="menu-button" title="Configurações">
+					<i class="fas fa-cogs menu-icon"></i>
+				</div>
 
-        </nav>
-        <section id="main-section">
+			</nav>
+			<section id="main-section">
 
-            <section id="header-info">
-                <div class="header-info">
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            Data:
-                        </label>
-                        <p id="current-date">
-                            01/01/2001
-                        </p>
-                    </div>
+				<section id="header-info">
+					<div class="header-info">
+						<div class="header-info-data">
+							<label class="label-data"> Data: </label>
+							<p id="current-date">01/01/2001</p>
+						</div>
 
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            Turno:
-                        </label>
-                        <p id="current-shift">
-                            00:00h-23:59h
-                        </p>
-                    </div>
+						<div class="header-info-data">
+							<label class="label-data"> Turno: </label>
+							<p id="current-shift">00:00h-23:59h</p>
+						</div>
 
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            Médico Responsável:
-                        </label>
-                        <p id="doctor">
-                            Pedro Henrique Sousa Ferreira Gonçalves                        </p>
-                    </div>
-                </div>
-                <div class="header-info">
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            CRM:
-                        </label>
-                        <p id="crm">
-                            5987
-                        </p>
-                    </div>
+						<div class="header-info-data">
+							<label class="label-data"> Médico Responsável: </label>
+							<p id="doctor">Pedro Henrique Sousa Ferreira Gonçalves</p>
+						</div>
+					</div>
+					<div class="header-info">
+						<div class="header-info-data">
+							<label class="label-data"> CRM: </label>
+							<p id="crm"> 5987 - PE</p>
+						</div>
 
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            Pacientes Internados:
-                        </label>
-                        <p id="appointments">
-                            5
-                        </p>
-                    </div>
+						<div class="header-info-data">
+							<label class="label-data"> Pacientes Internados: </label>
+							<p id="appointments">5</p>
+						</div>
 
-                    <div class="header-info-data">
-                        <label class="label-data">
-                            Tempo médio de espera:
-                        </label>
-                        <p id="time">
-                            15min
-                        </p>
-                    </div>
-                </div>
-                <div class="logo-div">
-                    <img src="./logo-docshift-2.png" alt="DocShift Logo" class="logo" />
+						<div class="header-info-data">
+							<label class="label-data"> Tempo médio de espera: </label>
+							<p id="time">15min</p>
+						</div>
+					</div>
+					<div class="logo-div">
+						<img src="./logo-docshift-2.png" alt="DocShift Logo" class="logo" />
 
-                </div>
-            </section>
+					</div>
+				</section>
 
-            <section id="patient-content">
-                <div id="content-1" class="content-card">
-                    <div class="content-left">
-                        <p id="content-1-id" class="content-id">40028922</p>
-                        <p id="content-1-patient" class="content-patient">Maria Luiza da Silva Sales Mendes</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-2" class="content-card">
-                    <div class="content-left">
-                        <p id="content-2-id" class="content-id">06657433</p>
-                        <p id="content-2-patient" class="content-patient">Luiz Felipe Rodrigues Gomes</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-3" class="content-card">
-                    <div class="content-left">
-                        <p id="content-3-id" class="content-id">65574866</p>
-                        <p id="content-3-patient" class="content-patient">Pedro Henrique Sousa Ferreira Gonçalves</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-4" class="content-card">
-                    <div class="content-left">
-                        <p id="content-4-id" class="content-id">34477955</p>
-                        <p id="content-4-patient" class="content-patient">Mariana Silva Teixeira Ribeiro de Lima</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-5" class="content-card">
-                    <div class="content-left">
-                        <p id="content-5-id" class="content-id">64489955</p>
-                        <p id="content-5-patient" class="content-patient">João Pedro da Costa Santos Paes</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-6" class="content-card">
-                    <div class="content-left">
-                        <p id="content-6-id" class="content-id">64475522</p>
-                        <p id="content-6-patient" class="content-patient">Maria Luiza da Silva Sales Mendes</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
-                <div id="content-7" class="content-card">
-                    <div class="content-left">
-                        <p id="content-7-id" class="content-id">42069666</p>
-                        <p id="content-7-patient" class="content-patient">Maria Luiza da Silva Sales
-                            Mendes</p>
-                    </div>
-                    <div class="content-right">
-                        <i class="fas fa-caret-down arrow-icon"></i>
-                    </div>
-                </div>
+				<section id="patient-content">
+					<div id="content-1" class="content-card">
+						<div class="content-left">
+							<p id="content-1-id" class="content-id">40028922</p>
+							<p id="content-1-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-2" class="content-card">
+						<div class="content-left">
+							<p id="content-2-id" class="content-id">06657433</p>
+							<p id="content-2-patient" class="content-patient">Luiz Felipe
+								Rodrigues Gomes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-3" class="content-card">
+						<div class="content-left">
+							<p id="content-3-id" class="content-id">65574866</p>
+							<p id="content-3-patient" class="content-patient">Pedro
+								Henrique Sousa Ferreira Gonçalves</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-4" class="content-card">
+						<div class="content-left">
+							<p id="content-4-id" class="content-id">34477955</p>
+							<p id="content-4-patient" class="content-patient">Mariana
+								Silva Teixeira Ribeiro de Lima</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-5" class="content-card">
+						<div class="content-left">
+							<p id="content-5-id" class="content-id">64489955</p>
+							<p id="content-5-patient" class="content-patient">João Pedro
+								da Costa Santos Paes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-6" class="content-card">
+						<div class="content-left">
+							<p id="content-6-id" class="content-id">64475522</p>
+							<p id="content-6-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-7" class="content-card">
+						<div class="content-left">
+							<p id="content-7-id" class="content-id">42069666</p>
+							<p id="content-7-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
 
 
-            </section>
-        </section>
-    </div>
+				</section>
+			</section>
+		</div>
 	</h:body>
 
 </f:view>
