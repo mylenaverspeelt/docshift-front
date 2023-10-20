@@ -1,51 +1,64 @@
 @import url("./colors.css");
+
 @import url("./reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap')
+	;
 
 body {
-    font-family: 'Geologica', sans-serif;
+	font-family: 'Geologica', sans-serif;
 }
 
 #history-section {
-    border-radius: 8px;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    margin: 6rem 35rem;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    background-color: var(--light-green);
+	border-radius: 8px;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	margin: 6rem 35rem;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: #ffffff45;
 }
 
 .date-label {
-    font-size: 2rem;
-    font-weight: bold;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 #datepicker {
-    padding: 1rem;
-    font-size: 1.3rem;
-    width: 15rem;
-    margin-top: 3rem;
+	padding: 1rem;
+	font-size: 1.3rem;
+	width: 15rem;
+	margin-top: 3rem;
+	border-radius: 8px;
+	border: transparent;
+}
+
+#datepicker::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+}
+
+#datepicker:focus {
+	outline: none;
 }
 
 .search-button {
-    margin: 2rem 0 0 0;
-    padding: 15px;
-    border-radius: 8px;
-    width: 15rem;
-    cursor: pointer;
-    background-color: var(--super-dark-green);
-    color: var(--light-gray);
-    border: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 5px 5px 5px #2020202a;
+	margin: 2rem 0 0 0;
+	padding: 15px;
+	border-radius: 8px;
+	width: 15rem;
+	cursor: pointer;
+	background-color: var(--super-dark-green);
+	color: var(--light-gray);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #2020202a;
 }
 
 .search-button:hover {
-    box-shadow: 5px 5px 5px #202020ad;
-    background-color: var(--light-green);
-    color: var(--black);
-
+	box-shadow: 5px 5px 5px #202020ad;
+	background-color: var(--light-green);
+	color: var(--black);
 }
