@@ -1,0 +1,52 @@
+@import url("./colors.css");
+@import url("./reset.css");
+
+#login-section {
+    margin: auto;
+    border-radius: 8px;
+    padding: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#login-section p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--super-dark-green);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+
+.form-input {
+    padding: 15px;
+    width: 15rem;
+    margin: 5px 0;
+    border-radius: 0.5rem;
+    border-color: #ebebeb9c;
+
+}
+
+#form-button {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 15rem;
+    cursor: pointer;
+    background-color: var(--light-green);
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+
+}
+
+#form-button:hover {
+    box-shadow: 5px 5px 5px #202020ad;
+    background-color: var(--super-dark-green);
+    color: var(--light-gray);
+}

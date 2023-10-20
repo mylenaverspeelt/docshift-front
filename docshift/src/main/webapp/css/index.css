@@ -1,13 +1,9 @@
 @import url("./colors.css");
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Geologica', sans-serif;
 }
 
 #screen {
@@ -52,8 +48,8 @@ body {
     box-shadow: 5px 5px 5px #2020208e;
 }
 
-.menu-icon{
-font-size: 2rem;
+.menu-icon {
+    font-size: 2rem;
 }
 
 #header-info {
@@ -102,7 +98,7 @@ font-size: 2rem;
     cursor: pointer;
 }
 
-.content-card:hover{
+.content-card:hover {
     box-shadow: 5px 5px 5px #20202027;
 }
 
@@ -130,36 +126,4 @@ font-size: 2rem;
 
 .content-right {
     margin-left: auto;
-}
-
-
-/*  LOGIN */
-
-#login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: #ebebeb9c;
-    height: 30%;
-    padding: 10rem 5rem;
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.form-input {
-    padding: 15px;
-    margin: 5px 0;
-    border-radius: 0.5rem;
-    border-color: #ebebeb9c;
-}
-
-#form-button {
-    margin: 10px 0;
-    padding: 10px;
-    cursor: pointer;
 }
