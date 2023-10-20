@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
 
 body {
-  font-family: 'Geologica', sans-serif;
+    font-family: 'Geologica', sans-serif;
 }
 
 #screen {
@@ -52,18 +52,35 @@ body {
     font-size: 2rem;
 }
 
+.logo {
+    height: 8rem;
+    width: 12rem;
+}
+
+.logo-div {
+    display: flex;
+    margin-left: auto;
+}
+
 #header-info {
     border: 1px solid var(--gray);
-    width: auto;
-    display: flex;
     border-radius: 8px;
-    flex-direction: column;
     font-size: 1.2rem;
     background-color: var(--light-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    max-height: 20vh;
+
 }
 
 .header-info-data {
-    margin: 0.5rem;
+    margin: 0 9rem 0.5rem 0.5rem;
     display: flex;
 }
 
@@ -71,7 +88,7 @@ body {
     font-weight: bold;
 }
 
-#current-date, #current-shift, #doctor {
+#current-date, #current-shift, #doctor, #appointments, #crm, #time {
     margin-left: 0.5rem;
 }
 

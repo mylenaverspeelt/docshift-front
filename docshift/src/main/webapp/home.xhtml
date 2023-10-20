@@ -16,8 +16,7 @@
 	</h:head>
 
 	<h:body>
-
-		<div id="screen">
+  <div id="screen">
         <nav id="aside-menu">
 
             <div id="new-shift" class="menu-button" title="Novo Plantão">
@@ -44,31 +43,64 @@
         <section id="main-section">
 
             <section id="header-info">
-                <div class="header-info-data">
-                    <label class="label-data">
-                        Data:
-                    </label>
-                    <p id="current-date">
-                        01/01/2001
-                    </p>
-                </div>
+                <div class="header-info">
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            Data:
+                        </label>
+                        <p id="current-date">
+                            01/01/2001
+                        </p>
+                    </div>
 
-                <div class="header-info-data">
-                    <label class="label-data">
-                        Horário:
-                    </label>
-                    <p id="current-shift">
-                        00:00h-23:59h
-                    </p>
-                </div>
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            Turno:
+                        </label>
+                        <p id="current-shift">
+                            00:00h-23:59h
+                        </p>
+                    </div>
 
-                <div class="header-info-data">
-                    <label class="label-data">
-                        Médico Responsável:
-                    </label>
-                    <p id="doctor">
-                        Drauzio Varela
-                    </p>
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            Médico Responsável:
+                        </label>
+                        <p id="doctor">
+                            Pedro Henrique Sousa Ferreira Gonçalves                        </p>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            CRM:
+                        </label>
+                        <p id="crm">
+                            5987
+                        </p>
+                    </div>
+
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            Pacientes Internados:
+                        </label>
+                        <p id="appointments">
+                            5
+                        </p>
+                    </div>
+
+                    <div class="header-info-data">
+                        <label class="label-data">
+                            Tempo médio de espera:
+                        </label>
+                        <p id="time">
+                            15min
+                        </p>
+                    </div>
+                </div>
+                <div class="logo-div">
+                    <img src="./logo-docshift-2.png" alt="DocShift Logo" class="logo" />
+
                 </div>
             </section>
 
@@ -142,7 +174,6 @@
             </section>
         </section>
     </div>
-
 	</h:body>
 
 </f:view>
