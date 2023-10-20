@@ -52,6 +52,10 @@ body {
     box-shadow: 5px 5px 5px #2020208e;
 }
 
+.menu-icon{
+font-size: 2rem;
+}
+
 #header-info {
     border: 1px solid var(--gray);
     width: auto;
@@ -128,3 +132,34 @@ body {
     margin-left: auto;
 }
 
+
+/*  LOGIN */
+
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #ebebeb9c;
+    height: 30%;
+    padding: 10rem 5rem;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-input {
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 0.5rem;
+    border-color: #ebebeb9c;
+}
+
+#form-button {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
