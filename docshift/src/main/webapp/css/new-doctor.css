@@ -1,0 +1,21 @@
+@import url("./colors.css");
+@import url("./reset.css");
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap')
+	;
+
+body {
+	font-family: 'Geologica', sans-serif;
+}
+
+#new-doc-section {
+	border-radius: 8px;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	margin: 6rem 35rem;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: #ffffff45;
+}
