@@ -4,82 +4,132 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-	<f:view>
-	
+<f:view>
+
 	<h:head>
-		
+
 		<title>PLAYING WITH XHTML</title>
 		<link rel="stylesheet" href="css/index.css"></link>
 		<script type="text/javascript" src="scripts/index.js"></script>
-			
+		<script src="https://kit.fontawesome.com/6a8f4de875.js"
+			crossorigin="anonymous"></script>
 	</h:head>
-	
+
 	<h:body>
-	
-	<span>HELLO WORLD, XML!</span>
-	<span id="my-elem"></span>
-	
-	<style type="text/css">
-    .ui-grid td {
-        white-space: nowrap;
-    }
-</style>
- 
- 
-<h:form>
-    <h:panelGrid columns="2" cellpadding="5" styleClass="ui-grid">
-        <h:outputLabel for="@next" value="Basic Spinner: " />
-        <p:spinner id="basic" value="#{spinnerView.number1}" />
- 
-        <h:outputLabel for="@next" value="Step Factor: " />
-        <p:spinner id="step" value="#{spinnerView.number2}" stepFactor="0.25" />
- 
-        <h:outputLabel for="@next" value="Min/Max: " />
-        <p:spinner id="minMax" value="#{spinnerView.number3}" min="0" max="100" />
-         
-        <h:outputLabel for="@next" value="Rotate: " />
-        <p:spinner id="rotate" value="#{spinnerView.number6}" min="0" max="10" rotate="true" />
- 
-        <h:outputLabel for="@next" value="Prefix: " />
-        <p:spinner id="prefix" value="#{spinnerView.number4}" prefix="$" min="0" />
- 
-        <h:outputLabel for="ajaxSpinner" value="Ajax Spinner: " />
-        <p:outputPanel>
-            <p:spinner id="ajaxSpinner" value="#{spinnerView.number5}">
-                <p:ajax update="ajaxSpinnerValue" process="@this" />
-            </p:spinner>
-            <h:outputText id="ajaxSpinnerValue" value="#{spinnerView.number5}" style="padding-left: 10px" />
-        </p:outputPanel>
-    </h:panelGrid>
-     
-    <br />
-     
-    <p:commandButton value="Submit" update="display" oncomplete="PF('dlg').show()" action="#{spinnerView.doSomething}" />
- 
-    <p:dialog header="Values" widgetVar="dlg" showEffect="fold" hideEffect="fold">
-        <h:panelGrid id="display" columns="2" cellpadding="5">
-            <h:outputText value="Value 1: " />
-            <h:outputText value="#{spinnerView.number1}" />
- 
-            <h:outputText value="Value 2: " />
-            <h:outputText value="#{spinnerView.number2}" />
- 
-            <h:outputText value="Value 3: " />
-            <h:outputText value="#{spinnerView.number3}" />
- 
-            <h:outputText value="Value 4: " />
-            <h:outputText value="#{spinnerView.number4}" />
- 
-            <h:outputText value="Value 5: " />
-            <h:outputText value="#{spinnerView.number5}" />
-            
-            <h:outputText value="Value composed: " />
-            <h:outputText value="#{spinnerView.numberComposed}" />
-        </h:panelGrid>
-    </p:dialog>
-</h:form>
-	
+
+		<div id="screen">
+			<nav id="aside-menu">
+
+				<div id="new-shift" class="menu-button">Novo Plantão</div>
+
+				<div id="shift-history" class="menu-button">Histórico de
+					Plantões</div>
+
+				<div id="new-doctor" class="menu-button">Novo Médico</div>
+
+				<div id="botao4" class="menu-button">Mais um Botão</div>
+
+				<div id="config" class="menu-button">Configurações</div>
+
+			</nav>
+			<section id="main-section">
+
+				<section id="header-info">
+					<div class="header-info-data">
+						<label class="label-data"> Data: </label>
+						<p id="current-date">01/01/2001</p>
+					</div>
+
+					<div class="header-info-data">
+						<label class="label-data"> Horário: </label>
+						<p id="current-shift">00:00h-23:59h</p>
+					</div>
+
+					<div class="header-info-data">
+						<label class="label-data"> Médico Responsável: </label>
+						<p id="doctor">Drauzio Varela</p>
+					</div>
+				</section>
+
+				<section id="patient-content">
+					<div id="content-1" class="content-card">
+						<div class="content-left">
+							<p id="content-1-id" class="content-id">40028922</p>
+							<p id="content-1-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-2" class="content-card">
+						<div class="content-left">
+							<p id="content-2-id" class="content-id">06657433</p>
+							<p id="content-2-patient" class="content-patient">Luiz Felipe
+								Rodrigues Gomes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-3" class="content-card">
+						<div class="content-left">
+							<p id="content-3-id" class="content-id">65574866</p>
+							<p id="content-3-patient" class="content-patient">Pedro
+								Henrique Sousa Ferreira Gonçalves</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-4" class="content-card">
+						<div class="content-left">
+							<p id="content-4-id" class="content-id">34477955</p>
+							<p id="content-4-patient" class="content-patient">Mariana
+								Silva Teixeira Ribeiro de Lima</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-5" class="content-card">
+						<div class="content-left">
+							<p id="content-5-id" class="content-id">64489955</p>
+							<p id="content-5-patient" class="content-patient">João Pedro
+								da Costa Santos Paes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-6" class="content-card">
+						<div class="content-left">
+							<p id="content-6-id" class="content-id">64475522</p>
+							<p id="content-6-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+					<div id="content-7" class="content-card">
+						<div class="content-left">
+							<p id="content-7-id" class="content-id">42069666</p>
+							<p id="content-7-patient" class="content-patient">Maria Luiza
+								da Silva Sales Mendes</p>
+						</div>
+						<div class="content-right">
+							<i class="fas fa-caret-down arrow-icon"></i>
+						</div>
+					</div>
+
+
+				</section>
+			</section>
+		</div>
+
+
 	</h:body>
-	
-	</f:view>
+
+</f:view>
 </html>

@@ -1,3 +1,130 @@
-#my-elem{
-	background-color: rgba(255, 0, 0, 0.2);
+@import url("./colors.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#screen {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--super-light-green);
+}
+
+#aside-menu {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: var(--dark-green);
+}
+
+#main-section {
+    width: 100%;
+    margin: 2rem 4rem;
+    background-color: var(--super-light-green);
+}
+
+.menu-button {
+    background-color: green;
+    height: 100px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    border: 1px solid var(--super-dark-green);
+}
+
+.menu-button:hover {
+    box-shadow: 5px 5px 5px #2020208e;
+}
+
+#header-info {
+    border: 1px solid var(--gray);
+    width: auto;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: var(--light-green);
+}
+
+.header-info-data {
+    margin: 0.5rem;
+    display: flex;
+}
+
+.label-data {
+    font-weight: bold;
+}
+
+#current-date, #current-shift, #doctor {
+    margin-left: 0.5rem;
+}
+
+#patient-content {
+    width: auto;
+    height: 80v;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content-card {
+    background-color: var(--light-gray);
+    height: 5rem;
+    margin: 0.5rem 0;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+    border: var(--gray);
+    justify-content: space-between;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.content-card:hover{
+    box-shadow: 5px 5px 5px #20202027;
+}
+
+.content-id {
+    font-weight: bold;
+    color: var(--super-dark-green);
+}
+
+.content-patient {
+    margin-left: 0.5rem;
+}
+
+.arrow-icon {
+    font-size: 1.7rem;
+    color: var(--super-dark-green);
+}
+
+.arrow-icon:hover {
+    color: var(--medium-green)
+}
+
+.content-left {
+    display: flex;
+}
+
+.content-right {
+    margin-left: auto;
+}
+
