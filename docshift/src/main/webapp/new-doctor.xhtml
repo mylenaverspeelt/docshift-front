@@ -44,36 +44,110 @@
 			</nav>
 
 			<section id="main-section">
-				<section id="new-doc-section">
+				<section id="form-section">
 
-					<h1>Cadastro de Médico</h1>
-
-					<form action="#" method="post">
-
-						<label for="nome">Nome:</label> <input type="text" id="nome"
-							name="nome"> </input> <label for="crm">CRM:</label> <input
-							type="text" id="crm" name="crm"> </input> <label
-							for="especialidade">Especialidade:</label> <input type="text"
-							id="especialidade" name="especialidade"> </input> <label
-							for="genero">Gênero:</label> <input type="radio" id="masculino"
-							name="genero" value="Masculino"> </input> <label for="masculino">Masculino</label>
-						<input type="radio" id="feminino" name="genero" value="Feminino"></input>
-
-						<label for="feminino">Feminino</label> <label
-							for="data_nascimento">Data de Nascimento:</label> <input
-							type="date" id="data_nascimento" name="data_nascimento"></input>
-
-						<label for="cpf">CPF:</label> <input type="text" id="cpf"
-							name="cpf"> </input> <label for="email">E-mail:</label> <input
-							type="email" id="email" name="email"> </input> <label
-							for="telefone">Telefone para Contato:</label> <input type="tel"
-							id="telefone" name="telefone"></input> <label
-							for="contato_emergencia">Contato de Emergência:</label> <label
-							for="nome_emergencia">Nome:</label> <input type="text"
-							id="nome_emergencia" name="nome_emergencia"></input> <label
-							for="telefone_emergencia">Telefone:</label> <input type="tel"
-							id="telefone_emergencia" name="telefone_emergencia"></input> <input
-							type="submit" value="Enviar"></input>
+					<h1 class="form-title">Cadastrar Novo Médico</h1>
+					<form action="#" method="post" class="new-doc-form">
+<div class="form-left">					
+	<label class="form-label-2" for="personal_info">Dados Pessoais</label> 
+						<label class="form-label" for="nome">Nome:</label>
+						 <input
+							class="form-input form-input-lg" type="text" id="nome" name="nome"></input> 
+						<div class="form-group">
+						<label class="form-label" for="crm">CRM:</label> 
+						<input
+							class="form-input form-input-sm" type="text" id="crm" name="crm">
+						</input>
+						
+						<label
+							class="form-label" for="data_nascimento">Data de
+							Nascimento:</label> 
+							<input class="form-input form-input-sm" type="date" id="data_nascimento"
+							name="data_nascimento"></input>
+							
+						</div>
+						 <label class="form-label" for="especialidade">Especialidade:</label>
+						<input class="form-input form-input-lg" type="text" id="especialidade" name="especialidade">
+						</input>
+						
+						 <label class="form-label" for="genero">Gênero:</label>
+						 <div class="form-gender">
+						 
+						  <input class="form-input"
+							type="radio" id="female" name="female" value="Female"></input>
+						<label class="form-label" for="female">Feminino</label> 
+						
+						  <input class="form-input"
+							type="radio" id="male" name="male" value="Male">
+						</input> 
+						<label class="form-label" for="male">Masculino</label>
+						
+						 <input class="form-input"
+							type="radio" id="non-binary" name="non_binary" value="Non-Binary"></input>
+						<label class="form-label" for="non_binary">Não-Binário</label> 
+						
+						 <input class="form-input"
+							type="radio" id="other-gender" name="other_gender" value="Other Gender"></input>
+						<label class="form-label" for="other_gender">Outro(Especificar)</label> 
+						
+						 <input class="form-input"
+							type="radio" id="not-answer" name="not_answer" value="not_answer"></input>
+						<label class="form-label" for="not_answer">Prefiro não responder</label> 
+											
+						</div>
+							<div class="form-group">
+							 <label class="form-label"
+							for="cpf">CPF:</label> 
+							<input class="form-input form-input-sm"
+							type="text" id="cpf" name="cpf"> </input> 
+							
+								<label
+							class="form-label form-input-sm" for="telefone">Telefone para
+							Contato:</label> 
+							<input class="form-input form-input-sm" type="tel" id="telefone" name="telefone"></input>
+							
+							</div>
+							
+							
+							<label
+							class="form-label" for="email">E-mail:</label> 
+							<input class="form-input form-input-lg"
+							type="email" id="email" name="email"> </input> 
+							
+						</div>
+						
+						<hr/>
+<div class="form-right">
+						<label class="form-label-2" for="contato_emergencia">Contato
+							de Emergência:</label> 
+							<label class="form-label" for="nome_emergencia">Nome:</label>
+						<input class="form-input" type="text" id="nome_emergencia"
+							name="nome_emergencia"></input> 
+							
+							<label class="form-label"
+							for="telefone_emergencia">Telefone:</label>
+							 <input class="form-input" type="tel"
+							id="telefone_emergencia" name="telefone_emergencia"></input> 
+							<br/>
+							<label class="form-label-2" for="define_user">Defina seu usuário:</label> 
+								<label class="form-label" for="user">Usuário:</label>
+						<input class="form-input" type="text" id="user"
+							name="user"></input> 
+							
+							<label class="form-label"
+							for="define_password">Senha:</label>
+							 <input class="form-input" type="password"
+							id="password" name="password"></input> 
+							
+							<label class="form-label"
+							for="confirm_password">Confirmar Senha:</label>
+							 <input class="form-input" type="password"
+							id="confirm-password" name="confirm_password"></input> 
+														
+							<button class="form-button"
+							type="submit">Cadastrar
+							</button>
+							</div>
 					</form>
 				</section>
 			</section>

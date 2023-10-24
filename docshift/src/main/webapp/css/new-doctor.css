@@ -1,4 +1,5 @@
 @import url("./colors.css");
+
 @import url("./reset.css");
 
 @import
@@ -9,13 +10,112 @@ body {
 	font-family: 'Geologica', sans-serif;
 }
 
-#new-doc-section {
+#form-section {
 	border-radius: 8px;
-	padding: 4rem;
+	padding: 4rem 0;
 	display: flex;
 	flex-direction: column;
-	margin: 6rem 35rem;
 	align-items: center;
 	border: 1px solid rgba(0, 0, 0, 0.13);
 	background-color: #ffffff45;
+	margin: 2rem 15rem;
+	max-height: 95%;
+}
+
+.new-doc-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60rem;
+}
+
+.form-label {
+	color: var(--super-dark-green);
+	padding: 1rem 0;
+	font-weight: bold;
+}
+
+.form-label-2 {
+	font-size: 1.2rem;
+}
+
+.form-input {
+	border-radius: 8px;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+.form-input:focus {
+	outline: none;
+}
+
+.form-title {
+	font-size: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+.form-button {
+	margin: 8px 0;
+	padding: 1rem;
+	border-radius: 8px;
+	width: 10rem;
+	cursor: pointer;
+	background-color: var(--super-dark-green);
+	color: var(--light-gray);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #2020202a;
+}
+
+.form-button:hover {
+	box-shadow: 5px 5px 5px #202020ad;
+	background-color: var(--light-green);
+	color: var(--black);
+}
+
+.form-left {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+}
+
+.form-right {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+}
+
+.form-gender {
+	display: flex;
+	border: 1px solid purple;
+	flex-direction: row;
+	width: 25rem;
+	flex-wrap: wrap;
+}
+
+.form-input-lg {
+	width: 98%;
+}
+
+.form-input-sm {
+	width: 10rem;
+	height: 3rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0;
+	align-items: center;
+}
+
+.form-group input{
+	margin-right: 1rem;
+}
+
+hr {
+	border-left: 1px solid var(--dark-gray);
+    margin: 0 2rem;
 }
