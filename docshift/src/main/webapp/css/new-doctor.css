@@ -18,7 +18,7 @@ body {
 	align-items: center;
 	border: 1px solid rgba(0, 0, 0, 0.13);
 	background-color: #ffffff45;
-	margin: 2rem 15rem;
+	margin: 2rem 10rem;
 	max-height: 95%;
 }
 
@@ -26,13 +26,13 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 60rem;
 }
 
 .form-label {
 	color: var(--super-dark-green);
 	padding: 1rem 0;
 	font-weight: bold;
+	margin-right: 1rem;
 }
 
 .form-label-2 {
@@ -52,7 +52,7 @@ body {
 
 .form-title {
 	font-size: 2rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 2.5rem;
 }
 
 .form-button {
@@ -73,6 +73,12 @@ body {
 	box-shadow: 5px 5px 5px #202020ad;
 	background-color: var(--light-green);
 	color: var(--black);
+}
+
+.button-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .form-left {
@@ -96,12 +102,12 @@ body {
 }
 
 .form-input-lg {
-	width: 98%;
+	width: 90%;
 }
 
 .form-input-sm {
 	width: 10rem;
-	height: 3rem;
+	height: 2.3rem;
 }
 
 .form-group {
@@ -111,11 +117,11 @@ body {
 	align-items: center;
 }
 
-.form-group input{
+.form-group input {
 	margin-right: 1rem;
 }
 
 hr {
 	border-left: 1px solid var(--dark-gray);
-    margin: 0 2rem;
+	margin: 0 2rem;
 }
