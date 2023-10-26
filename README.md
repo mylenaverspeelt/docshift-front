@@ -16,6 +16,10 @@ New Medical Professional Registration: Easily add new healthcare professionals t
 <br/>
 -Primefaces
 <br/>
+-HTML
+<br/>
+-CSS
+<br/>
 -JDBC
 
 <b>Getting Started:</b>
