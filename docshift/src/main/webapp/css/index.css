@@ -100,11 +100,8 @@ a {
 
 .label-data {
 	font-weight: bold;
+	margin-right: 0.5rem;
 }
-
-/* #current-date, #current-shift, #doctor, #appointments, #crm, #time { */
-/* 	margin-left: 0.5rem; */
-/* } */
 
 .ui-fieldset-toggler {
 	display: none !important;
