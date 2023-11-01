@@ -8,7 +8,7 @@
 
 	<h:head>
 		<title>History</title>
-		<link rel="stylesheet" href="css/new-doctor.css"></link>
+		<link rel="stylesheet" href="css/forms.css"></link>
 		<link rel="stylesheet" href="css/index.css"></link>
 		<script type="text/javascript" src="scripts/index.js"></script>
 		<script src="https://kit.fontawesome.com/6a8f4de875.js"
@@ -22,12 +22,10 @@
 					<div id="home" class="menu-button" title="Pagina Inicial">
 						<i class="fas fa-home menu-icon"></i>
 					</div>
-				</a>
-			<a href="./new-patient.xhtml"><div id="new-patient"
+				</a> <a href="./new-patient.xhtml"><div id="new-patient"
 						class="menu-button" title="Novo Paciente">
 						<i class="fas fa-user-plus menu-icon"></i>
-					</div> </a>
-				<a href="./history.xhtml">
+					</div> </a> <a href="./history.xhtml">
 					<div id="shift-history" class="menu-button" title="Histórico">
 						<i class="far fa-calendar-alt menu-icon"></i>
 					</div>
@@ -45,99 +43,132 @@
 			</nav>
 
 			<section id="main-section">
-				<section id="form-section">
+				<section id="new-doctor-section">
 
 					<h1 class="form-title">Cadastrar Novo Médico</h1>
-					<form action="#" method="post" class="new-doc-form">
-						<div class="form-left">
-							<label class="form-label-2" for="personal_info"><i class="fas fa-caret-right"></i> Dados
-								Pessoais</label> <label class="form-label" for="nome">Nome:</label> <input
-								class="form-input form-input-lg" type="text" id="nome"
-								name="nome"></input>
-							<div class="form-group">
-								<label class="form-label" for="crm">CRM:</label> <input
-									class="form-input form-input-sm" type="text" id="crm"
-									name="crm"> </input> <label class="form-label right-label"
-									for="data_nascimento">Data de Nascimento:</label> <input
-									class="form-input form-input-sm" type="date"
-									id="data_nascimento" name="data_nascimento"></input>
-
-							</div>
-							
-
-
-							<div class="form-group">
-							
-							<label class="form-label" for="especialidade">Especialidade:</label>
-						<select
-									class="form-input form-input-sm" name="medical-specialty" id="medical-specialty">
-									<option value="feminino">Alergologia</option>
-									<option value="masculino">Anestesia</option>
-									<option value="non-binary">Cardiologia</option>
-									<option value="other-gender">Pediatria</option>
-									<option value="not-answer">Geriatria</option>
-								</select>
-							
-							
-								<label class="form-label right-label" for="gender">Gênero:</label> 
-								
-								<select
-									class="form-input form-input-sm " name="gender" id="gender">
-									<option value="feminino">Feminino</option>
-									<option value="masculino">Masculino</option>
-									<option value="non-binary">Não-Binário</option>
-									<option value="other-gender">Outro (Especifique)</option>
-									<option value="not-answer">Prefiro não responder</option>
-								</select>
+					<form action="#" method="post">
+						<div class="step" id="step1">
+							<label class="form-label-2" for="personal_info"><i
+								class="fas fa-caret-right"></i> Dados Pessoais</label>
+							<div class="label-input">
+								<label class="form-label" for="nome">Nome:</label> <input
+									class="form-input form-input-lg" type="text" id="nome"
+									name="nome"></input>
 							</div>
 
-
 							<div class="form-group">
-								<label class="form-label" for="cpf">CPF:</label> <input
-									class="form-input form-input-sm" type="text" id="cpf"
-									name="cpf"> </input> <label class="form-label right-label" for="telefone">Telefone
-									para Contato:</label> <input class="form-input form-input-sm "
-									type="tel" id="telefone" name="telefone"></input>
+								<div class="label-input">
+									<label class="form-label" for="crm">CRM:</label> <input
+										class="form-input form-input-sm" type="text" id="crm"
+										name="crm"> </input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="data_nascimento">Data
+										de Nascimento:</label> <input class="form-input form-input-sm"
+										type="date" id="data_nascimento" name="data_nascimento"></input>
+								</div>
 
 							</div>
 
 
-							<label class="form-label" for="email">E-mail:</label> <input
-								class="form-input form-input-lg" type="email" id="email"
-								name="email"> </input>
-
-						</div>
-
-						<hr />
-						<div class="form-right">
-							<label class="form-label-2" for="contato_emergencia"><i class="fas fa-caret-right"></i> Contato
-								de Emergência:</label> <label class="form-label" for="nome_emergencia">Nome:</label>
-							<input class="form-input form-input-lg" type="text"
-								id="nome_emergencia" name="nome_emergencia"></input>
 
 							<div class="form-group">
-								<label class="form-label" for="telefone_emergencia">Telefone:</label>
-								<input class="form-input form-input-sm" type="tel"
-									id="telefone_emergencia" name="telefone_emergencia"></input> <label
-									class="form-label right-label" for="proximity">Proximidade:</label> <input
-									class="form-input form-input-sm " type="text" id="proximity"
-									name="proximity"></input>
+								<div class="label-input">
+									<label class="form-label" for="especialidade">Especialidade:</label>
+									<select class="form-input form-input-sm"
+										name="medical-specialty" id="medical-specialty">
+										<option value="feminino">Alergologia</option>
+										<option value="masculino">Anestesia</option>
+										<option value="non-binary">Cardiologia</option>
+										<option value="other-gender">Pediatria</option>
+										<option value="not-answer">Geriatria</option>
+
+									</select>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="gender">Gênero:</label>
+
+									<select class="form-input form-input-sm " name="gender"
+										id="gender">
+										<option value="feminino">Feminino</option>
+										<option value="masculino">Masculino</option>
+										<option value="non-binary">Não-Binário</option>
+										<option value="other-gender">Outro (Especifique)</option>
+										<option value="not-answer">Prefiro não responder</option>
+									</select>
+								</div>
 							</div>
-							<br /> <label class="form-label-2" for="define_user"><i class="fas fa-caret-right"></i> Defina
-								seu usuário:</label> <label class="form-label" for="user">Usuário:</label>
-							<input class="form-input form-input-lg" type="text" id="user"
-								name="user"></input>
 
 							<div class="form-group">
-								<label class="form-label" for="define_password">Senha:</label> <input
-									class="form-input form-input-sm" type="password" id="password"
-									name="password"></input> <label class="form-label right-label"
-									for="confirm_password">Confirmar Senha:</label> <input
-									class="form-input form-input-sm" type="password"
-									id="confirm-password" name="confirm_password"></input>
+								<div class="label-input">
+									<label class="form-label" for="cpf">CPF:</label> <input
+										class="form-input form-input-sm" type="text" id="cpf"
+										name="cpf"> </input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="telefone">Telefone
+										para Contato:</label> <input class="form-input form-input-sm "
+										type="tel" id="telefone" name="telefone"></input>
+								</div>
+							</div>
+
+							<div class="label-input">
+								<label class="form-label" for="email">E-mail:</label> <input
+									class="form-input form-input-lg" type="email" id="email"
+									name="email"> </input>
 							</div>
 							<div class="button-div">
-								<button class="form-button" type="submit">Cadastrar</button>
+								<button class="form-button-2" onclick="nextStep()" type="submit">
+									<i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="step" id="step2">
+							<label class="form-label-2" for="contato_emergencia"><i
+								class="fas fa-caret-right"></i> Contato de Emergência:</label>
+							<div class="label-input">
+								<label class="form-label" for="nome_emergencia">Nome:</label> <input
+									class="form-input form-input-lg" type="text"
+									id="nome_emergencia" name="nome_emergencia"></input>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="telefone_emergencia">Telefone:</label>
+									<input class="form-input form-input-sm" type="tel"
+										id="telefone_emergencia" name="telefone_emergencia"></input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="proximity">Proximidade:</label>
+									<input class="form-input form-input-sm " type="text"
+										id="proximity" name="proximity"></input>
+								</div>
+							</div>
+							<br /> <label class="form-label-2" for="define_user"><i
+								class="fas fa-caret-right"></i> Defina seu usuário:</label>
+							<div class="label-input">
+								<label class="form-label" for="user">Usuário:</label> <input
+									class="form-input form-input-lg" type="text" id="user"
+									name="user"></input>
+							</div>
+
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="define_password">Senha:</label>
+									<input class="form-input form-input-sm" type="password"
+										id="password" name="password"></input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="confirm_password">Confirmar
+										Senha:</label> <input class="form-input form-input-sm" type="password"
+										id="confirm-password" name="confirm_password"></input>
+								</div>
+							</div>
+							<div class="button-div-2">
+								<button class="form-button-2" onclick="prevStep()" type="submit">
+									<i class="fas fa-arrow-left"></i>
+								</button>
+								<button class="form-button" onclick="nextStep()" type="submit">Cadastrar</button>
 							</div>
 						</div>
 					</form>
