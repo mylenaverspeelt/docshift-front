@@ -1,0 +1,24 @@
+@import url("./colors.css");
+
+@import url("./scrollbar.css");
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap')
+	;
+
+body {
+	overflow-x: hidden;
+	font-family: 'Geologica', sans-serif;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}

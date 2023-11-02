@@ -1,23 +1,4 @@
-@import url("./colors.css");
-
-@import url("./scrollbar.css");
-
-@import url("./reset.css");
-
-@import
-	url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap')
-	;
-
-body {
-	overflow-x: hidden;
-	font-family: 'Geologica', sans-serif;
-	max-height: 100%;
-	max-width: 100%;
-}
-
-a {
-	text-decoration: none;
-}
+@import url("./global.css");
 
 #screen {
 	display: flex;
@@ -26,6 +7,7 @@ a {
 	width: 100vw;
 	background-color: var(--super-light-green);
 	background-image: url("../bg-texture.png");
+	overflow-y: hidden;
 }
 
 #aside-menu {
@@ -134,7 +116,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	overflow-y: auto;
-	max-height: 100%;
+	max-height: 80%;
 }
 
 .content-card {
@@ -165,4 +147,8 @@ a {
 	box-shadow: 5px 5px 5px #202020ad;
 	background-color: var(--light-green);
 	color: var(--black);
+}
+
+.content-overflow{
+	overflow-y: auto;
 }
