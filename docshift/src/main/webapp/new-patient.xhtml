@@ -5,9 +5,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 <f:view>
-
 	<h:head>
-
 		<title>Novo Paciente</title>
 		<link rel="stylesheet" href="css/forms.css"></link>
 		<link rel="stylesheet" href="css/index.css"></link>
@@ -57,46 +55,41 @@
 							</div>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="crm">RG: </label> <input
-										class="form-input form-input-sm" type="text" id="crm"
-										name="crm"> </input>
+									<label class="form-label" for="rg">RG: </label> <input
+										class="form-input form-input-sm" type="text" id="rg" name="rg">
+									</input>
 								</div>
 								<div class="label-input">
 									<label class="form-label right-label" for="data_nascimento">Data
 										de Nascimento:</label><input class="form-input form-input-sm"
 										type="date" id="data_nascimento" name="data_nascimento"></input>
 								</div>
-
 							</div>
-
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="especialidade">Estado
+									<label class="form-label" for="estado_civil">Estado
 										Civil:</label> <select class="form-input form-input-sm"
-										name="medical-specialty" id="medical-specialty">
-										<option value="feminino">Alergologia</option>
-										<option value="masculino">Anestesia</option>
-										<option value="non-binary">Cardiologia</option>
-										<option value="other-gender">Pediatria</option>
-										<option value="not-answer">Geriatria</option>
+										name="estado_civil" id="estado_civil">
+										<option value="solteiro">Solteira(o)</option>
+										<option value="casado">Casada(o)</option>
+										<option value="divorciado">Divorciada(o)</option>
+										<option value="uniao_estavel">União Estável</option>
+										<option value="viuvo">Viúva(o)</option>
 									</select>
 								</div>
-
 								<div class="label-input">
-
-									<label class="form-label right-label" for="gender">Gênero:</label>
-
-									<select class="form-input form-input-sm " name="gender"
-										id="gender">
+									<label class="form-label right-label" for="genero">Gênero:</label>
+									<select class="form-input form-input-sm " name="genero"
+										id="genero">
 										<option value="feminino">Feminino</option>
 										<option value="masculino">Masculino</option>
-										<option value="non-binary">Não-Binário</option>
-										<option value="other-gender">Outro (Especifique)</option>
-										<option value="not-answer">Prefiro não responder</option>
+										<option value="nao_binario">Não-Binário</option>
+										<option value="outro_genero">Outro (Especifique)</option>
+										<option value="prefiro_nao_responder">Prefiro não
+											responder</option>
 									</select>
 								</div>
 							</div>
-
 							<div class="form-group">
 								<div class="label-input">
 									<label class="form-label" for="cpf">CPF:</label> <input
@@ -111,58 +104,54 @@
 							</div>
 							<div class="form-group">
 								<div class="label-input">
-
 									<label class="form-label" for="email">E-mail:</label> <input
 										class="form-input form-input-lg" type="email" id="email"
 										name="email"> </input>
 								</div>
 							</div>
-
-
 							<div class="button-div">
 								<button class="form-button-2" onclick="nextStep()" type="submit">
 									<i class="fas fa-arrow-right"></i>
 								</button>
 							</div>
 						</div>
-
 						<div class="step" id="step2">
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="diagnostico_condicoes_clinicas"><i
 								class="fas fa-caret-right"></i>Diagnóstico e Condições Clínicas</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Diagnóstico
+									<label class="form-label" for="diagnostico_principal">Diagnóstico
 										Principal:</label> <input class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="diagnostico_principal" name="diagnostico_principal"></input>
 								</div>
 							</div>
 							<br />
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Diagnóstico
+									<label class="form-label" for="diagnostico_secundario">Diagnóstico
 										Secundário (Se aplicável):</label> <input
 										class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="diagnostico_secundario" name="diagnostico_secundario"></input>
 								</div>
 							</div>
 							<br />
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Condições
+									<label class="form-label" for="condicoes_clinicas_relevantes">Condições
 										Clínicas Relevantes:</label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
+										type="text" id="condicoes_clinicas_relevantes"
+										name="condicoes_clinicas_relevantes"></input>
 								</div>
 							</div>
 							<br />
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Histórico
+									<label class="form-label" for="historico_medico">Histórico
 										Médico:</label> <input class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="historico_medico" name="historico_medico"></input>
 								</div>
 							</div>
 							<br />
-
 							<div class="button-div-2">
 								<button class="form-button-2" onclick="prevStep()" type="submit">
 									<i class="fas fa-arrow-left"></i>
@@ -170,61 +159,38 @@
 								<button class="form-button-2" onclick="nextStep()" type="submit">
 									<i class="fas fa-arrow-right"></i>
 								</button>
-
 							</div>
 						</div>
-
-
-
-
 						<div class="step" id="step3">
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="tratamento_medicamentos"><i
 								class="fas fa-caret-right"></i>Tratamento e Medicamentos</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Tratamentos
+									<label class="form-label" for="tratamentos_em_curso">Tratamentos
 										em curso:</label> <input class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="tratamentos_em_curso" name="tratamentos_em_curso"></input>
 								</div>
 							</div>
 							<br /> <label class="form-label" style="margin: 0 1rem;"
-								for="nome_emergencia">Medicamentos atuais:</label> <br />
-
+								for="medicamentos_atuais">Medicamentos atuais:</label> <br />
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Nome:</label> <input
+									<label class="form-label" for="nome_medicamento">Nome:</label> <input
 										class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="nome_medicamento" name="nome_medicamento"></input>
 								</div>
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Dose:</label> <input
+									<label class="form-label" for="dose_medicamento">Dose:</label> <input
 										class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="dose_medicamento" name="dose_medicamento"></input>
 								</div>
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Frequência:</label>
+									<label class="form-label" for="frequencia_medicamento">Frequência:</label>
 									<input class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="frequencia_medicamento" name="frequencia_medicamento"></input>
 								</div>
 							</div>
 							<br />
-							<div class="form-group">
-								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Condições
-										Clínicas Relevantes:</label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
-								</div>
-							</div>
-							<br />
-							<div class="form-group">
-								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Histórico
-										Médico:</label> <input class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
-								</div>
-							</div>
-							<br />
-
 							<div class="button-div-2">
 								<button class="form-button-2" onclick="prevStep()" type="submit">
 									<i class="fas fa-arrow-left"></i>
@@ -232,33 +198,28 @@
 								<button class="form-button-2" onclick="nextStep()" type="submit">
 									<i class="fas fa-arrow-right"></i>
 								</button>
-
 							</div>
 						</div>
 
-
 						<div class="step" id="step4">
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="alergias_reacoes"><i
 								class="fas fa-caret-right"></i>Alergias e Reações Adversas:</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Alergias
+									<label class="form-label" for="alergias_conhecidas">Alergias
 										Conhecidas:</label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
+										type="text" id="alergias_conhecidas" name="alergias_conhecidas"></input>
 								</div>
 							</div>
-
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Reações
+									<label class="form-label" for="reacoes_adversas">Reações
 										Adversas a Medicamentos ou Tratamentos</label> <input
 										class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
+										id="reacoes_adversas" name="reacoes_adversas"></input>
 								</div>
 							</div>
-
 							<br />
-
 							<div class="button-div-2">
 								<button class="form-button-2" onclick="prevStep()" type="submit">
 									<i class="fas fa-arrow-left"></i>
@@ -267,51 +228,37 @@
 									<i class="fas fa-arrow-right"></i>
 								</button>
 							</div>
-
 						</div>
 
-
-
 						<div class="step" id="step5">
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="procedimentos_intervencoes"><i
 								class="fas fa-caret-right"></i>Procedimentos e Intervenções:</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Procedimentos
+									<label class="form-label" for="procedimentos_realizados">Procedimentos
 										Realizados:</label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
+										type="text" id="procedimentos_realizados" name="procedimentos_realizados"></input>
 								</div>
 							</div>
-
-							<div class="form-group">
-								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Reações
-										Adversas a Medicamentos ou Tratamentos:</label> <input
-										class="form-input form-input-lg" type="text"
-										id="nome_emergencia" name="nome_emergencia"></input>
-								</div>
-							</div>
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="exames_anteriores"><i
 								class="fas fa-caret-right"></i>Exames Anteriores:</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Resultados
+									<label class="form-label" for="resultados_anteriores">Resultados
 										Anteriores: </label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
+										type="text" id="resultados_anteriores" name="resultados_anteriores"></input>
 								</div>
 							</div>
-
-							<label class="form-label-2" for="contato_emergencia"><i
+							<label class="form-label-2" for="demais_observacoes"><i
 								class="fas fa-caret-right"></i>Demais observações:</label>
 							<div class="form-group">
 								<div class="label-input">
-									<label class="form-label" for="nome_emergencia">Obs: </label> <input class="form-input form-input-lg"
-										type="text" id="nome_emergencia" name="nome_emergencia"></input>
+									<label class="form-label" for="observacoes">Obs: </label> <input
+										class="form-input form-input-lg" type="text"
+										id="observacoes" name="observacoes"></input>
 								</div>
 							</div>
-
 							<br />
-
 							<div class="button-div-2">
 								<button class="form-button-2" onclick="prevStep()" type="submit">
 									<i class="fas fa-arrow-left"></i>
@@ -320,12 +267,7 @@
 									<i class="fas fa-arrow-right"></i>
 								</button>
 							</div>
-
 						</div>
-
-
-
-
 
 						<div class="step" id="step6">
 							<label class="form-label-2" for="contato_emergencia"><i
@@ -343,25 +285,20 @@
 											id="telefone_emergencia" name="telefone_emergencia"></input>
 									</div>
 									<div class="label-input">
-										<label class="form-label right-label" for="proximity">Parentesco:</label>
+										<label class="form-label right-label" for="parentesco_emergencia">Parentesco:</label>
 										<input class="form-input form-input-sm " type="text"
-											id="proximity" name="proximity"></input>
+											id="parentesco_emergencia" name="parentesco_emergencia"></input>
 									</div>
 								</div>
 							</div>
 							<br />
-
 							<div class="button-div-2">
 								<button class="form-button-2" onclick="prevStep()" type="submit">
 									<i class="fas fa-arrow-left"></i>
 								</button>
 								<button class="form-button" onclick="nextStep()" type="submit">Cadastrar</button>
 							</div>
-
 						</div>
-
-
-
 					</form>
 				</section>
 			</section>
