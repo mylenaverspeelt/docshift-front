@@ -5,9 +5,8 @@
 	flex-direction: row;
 	height: 100vh;
 	width: 100vw;
-	background-color: var(--super-light-green);
 	background-image: url("../bg-texture.png");
-	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 #aside-menu {
@@ -17,17 +16,20 @@
 	justify-content: space-around;
 	text-align: center;
 	align-items: center;
-	background-color: var(--dark-green);
+	background-color: var(--dark-blue);
 }
 
 #main-section {
 	width: 100%;
 	margin: 2rem 4rem;
 	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .menu-button {
-	background-color: green;
+	background-color: var(--super-dark-blue);
 	height: 100px;
 	width: 100px;
 	display: flex;
@@ -37,7 +39,7 @@
 	border-radius: 50px;
 	color: white;
 	padding: 5px;
-	border: 1px solid var(--super-dark-green);
+	border: 1px solid var(--super-dark-blue);
 	margin: 0 1rem;
 }
 
@@ -50,8 +52,7 @@
 }
 
 .logo {
-	height: 8rem;
-	width: 12rem;
+	height: 4rem;
 }
 
 .logo-div {
@@ -61,12 +62,13 @@
 
 #header-info {
 	border: 1px solid var(--gray);
-	border-radius: 8px;
+	border-radius: 20px;
 	font-size: 1.2rem;
-	background-color: var(--light-green);
+	background: var(--medium-blue);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: 1rem;
 }
 
 .header-info {
@@ -80,9 +82,14 @@
 	display: flex;
 }
 
-.label-data {
+.label-title {
 	font-weight: bold;
 	margin-right: 0.5rem;
+	color: var(--light-gray);
+}
+
+.label-p{
+	color: var(--light-gray);
 }
 
 .ui-fieldset-toggler {
@@ -90,7 +97,7 @@
 }
 
 .ui-fieldset legend.ui-state-default {
-	background: var(--light-green);
+	background: var(--light-blue);
 	color: var(--black);
 	cursor: pointer;
 	border-radius: 10px;
@@ -102,7 +109,7 @@
 }
 
 .ui-fieldset legend.ui-state-default:hover {
-	background: var(--medium-green);
+	background: var(--medium-blue);
 	color: var(--light-gray);
 }
 
@@ -135,7 +142,7 @@
 	border-radius: 8px;
 	width: 11rem;
 	cursor: pointer;
-	background-color: var(--super-dark-green);
+	background-color: var(--super-dark-blue);
 	color: var(--light-gray);
 	border: none;
 	font-weight: bold;
@@ -145,10 +152,9 @@
 
 .content-button:hover {
 	box-shadow: 5px 5px 5px #202020ad;
-	background-color: var(--light-green);
-	color: var(--black);
+	background-color: var(--medium-blue);
 }
 
-.content-overflow{
+.content-overflow {
 	overflow-y: auto;
 }

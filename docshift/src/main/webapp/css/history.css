@@ -49,7 +49,7 @@ body {
 	border-radius: 8px;
 	width: 15rem;
 	cursor: pointer;
-	background-color: var(--super-dark-green);
+	background-color: var(--super-dark-blue);
 	color: var(--light-gray);
 	border: none;
 	font-weight: bold;
@@ -59,6 +59,6 @@ body {
 
 .search-button:hover {
 	box-shadow: 5px 5px 5px #202020ad;
-	background-color: var(--light-green);
+	background-color: var(--light-blue);
 	color: var(--black);
 }
