@@ -20,7 +20,7 @@ New Medical Professional Registration: Easily add new healthcare professionals t
 <br/>
 -CSS
 <br/>
--JDBC
+-Spring
 
 <b>Getting Started:</b>
 <br/>
