@@ -9,6 +9,7 @@
 	max-height: 95%;
 	padding: 4rem;
 	width: 70%;
+	border: 1px solid red;
 }
 
 .form-input {
@@ -121,7 +122,8 @@ select {
 
 .step {
 	display: none;
-	border: 1px solid red;
+	
+	border: 1px solid purple;
 }
 
 .label-input {
@@ -131,4 +133,5 @@ select {
 	flex-direction: column;
 	width: 100%;
 	margin: 0 1rem;
+	border: 1px solid red;
 }
