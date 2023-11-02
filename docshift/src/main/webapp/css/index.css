@@ -1,3 +1,154 @@
-#my-elem{
-	background-color: rgba(255, 0, 0, 0.2);
+@import url("./global.css");
+
+#screen {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--super-light-green);
+	background-image: url("../bg-texture.png");
+	overflow-y: hidden;
+}
+
+#aside-menu {
+	max-width: 12%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	background-color: var(--dark-green);
+}
+
+#main-section {
+	width: 100%;
+	margin: 2rem 4rem;
+	max-height: 100%;
+}
+
+.menu-button {
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 50px;
+	color: white;
+	padding: 5px;
+	border: 1px solid var(--super-dark-green);
+	margin: 0 1rem;
+}
+
+.menu-button:hover {
+	box-shadow: 5px 5px 5px #2020208e;
+}
+
+.menu-icon {
+	font-size: 2rem;
+}
+
+.logo {
+	height: 8rem;
+	width: 12rem;
+}
+
+.logo-div {
+	display: flex;
+	margin-left: auto;
+}
+
+#header-info {
+	border: 1px solid var(--gray);
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: var(--light-green);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-info {
+	display: flex;
+	flex-direction: column;
+	max-height: 20vh;
+}
+
+.header-info-data {
+	margin: 0 9rem 0.5rem 0.5rem;
+	display: flex;
+}
+
+.label-data {
+	font-weight: bold;
+	margin-right: 0.5rem;
+}
+
+.ui-fieldset-toggler {
+	display: none !important;
+}
+
+.ui-fieldset legend.ui-state-default {
+	background: var(--light-green);
+	color: var(--black);
+	cursor: pointer;
+	border-radius: 10px;
+	border-color: transparent;
+	font-weight: light;
+	font-family: 'Geologica', sans-serif;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.ui-fieldset legend.ui-state-default:hover {
+	background: var(--medium-green);
+	color: var(--light-gray);
+}
+
+.ui-fieldset {
+	margin-bottom: 1rem;
+}
+
+#patient-content {
+	width: auto;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	max-height: 80%;
+}
+
+.content-card {
+	display: flex;
+	max-height: 10rem;
+}
+
+.content-info {
+	margin-right: 2rem;
+	justify-content: space-between;
+}
+
+.content-button {
+	margin: 15px 0;
+	padding: 10px;
+	border-radius: 8px;
+	width: 11rem;
+	cursor: pointer;
+	background-color: var(--super-dark-green);
+	color: var(--light-gray);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #2020202a;
+}
+
+.content-button:hover {
+	box-shadow: 5px 5px 5px #202020ad;
+	background-color: var(--light-green);
+	color: var(--black);
+}
+
+.content-overflow{
+	overflow-y: auto;
 }

@@ -1,0 +1,136 @@
+#new-patient-section, #new-doctor-section {
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: #ffffff45;
+	margin: 2rem 15rem;
+	max-height: 95%;
+	padding: 4rem;
+	width: 70%;
+}
+
+.form-input {
+	border-radius: 8px;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+.form-label {
+	color: var(--super-dark-green);
+	font-weight: bold;
+	padding: 0.5rem 0.5rem 0 0;
+	margin-bottom: 1rem;
+}
+
+.form-label-2 {
+	font-size: 1.4rem;
+	margin: 0 1rem;
+	padding: 1.5rem 0;
+}
+
+.form-input:focus {
+	outline: none;
+}
+
+.form-title {
+	font-size: 2rem;
+	padding-bottom: 2.5rem;
+}
+
+.form-button {
+	margin: 8px 0;
+	padding: 1rem;
+	border-radius: 8px;
+	width: 10rem;
+	cursor: pointer;
+	background-color: var(--super-dark-green);
+	color: var(--light-gray);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #2020202a;
+}
+
+.form-button:hover {
+	box-shadow: 5px 5px 5px #202020ad;
+	background-color: var(--light-green);
+	color: var(--black);
+}
+
+.form-button-2 {
+	margin: 8px 0;
+	padding: 1rem;
+	border-radius: 50%;
+	width: 3rem;
+	cursor: pointer;
+	background-color: var(--super-dark-green);
+	color: var(--light-gray);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #2020202a;
+}
+
+.form-button-2:hover {
+	box-shadow: 5px 5px 5px #202020ad;
+	background-color: var(--light-green);
+	color: var(--black);
+}
+
+.button-div {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.button-div-2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-input-lg {
+	width: 100%;
+}
+
+.form-input-sm {
+	width: 100%;
+	height: 2.3rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: row;
+	padding: 0.6rem 0;
+	align-items: center;
+	width: 100%;
+}
+
+select {
+	cursor: pointer;
+}
+
+#data_nascimento::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+}
+
+.step {
+	display: none;
+	border: 1px solid red;
+}
+
+.label-input {
+	height: 5rem;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 1rem;
+}
+
+.fas{
+	margin-right: 0.5rem;
+}

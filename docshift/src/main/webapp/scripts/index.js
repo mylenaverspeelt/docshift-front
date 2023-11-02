@@ -1,9 +1,21 @@
-function do_something(){
-	const elem = document.getElementById("my-elem");
-	elem.innerHTML = "Teste 123";
+let currentStep = 1;
+
+document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('step1').style.display = 'block';
+    });
+
+
+function nextStep() {
+	event.preventDefault()
+	document.getElementById(`step${currentStep}`).style.display = "none";
+	currentStep++;
+	document.getElementById(`step${currentStep}`).style.display = "block";
 }
 
-document.addEventListener("DOMContentLoaded", function (){
-	do_something();	
-})
+function prevStep() {
+	event.preventDefault()
+	document.getElementById(`step${currentStep}`).style.display = "none";
+	currentStep--;
+	document.getElementById(`step${currentStep}`).style.display = "block";
+}
 

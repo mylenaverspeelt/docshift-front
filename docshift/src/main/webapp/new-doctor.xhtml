@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view>
+
+	<h:head>
+		<title>History</title>
+		<link rel="stylesheet" href="css/forms.css"></link>
+		<link rel="stylesheet" href="css/index.css"></link>
+		<script type="text/javascript" src="scripts/index.js"></script>
+		<script src="https://kit.fontawesome.com/6a8f4de875.js"
+			crossorigin="anonymous"></script>
+	</h:head>
+
+	<h:body>
+		<div id="screen">
+			<nav id="aside-menu">
+				<a href="./home.xhtml">
+					<div id="home" class="menu-button" title="Pagina Inicial">
+						<i class="fas fa-home menu-icon"></i>
+					</div>
+				</a> <a href="./new-patient.xhtml"><div id="new-patient"
+						class="menu-button" title="Novo Paciente">
+						<i class="fas fa-user-plus menu-icon"></i>
+					</div> </a> <a href="./history.xhtml">
+					<div id="shift-history" class="menu-button" title="Histórico">
+						<i class="far fa-calendar-alt menu-icon"></i>
+					</div>
+				</a> <a href="./new-doctor.xhtml">
+					<div id="new-doctor" class="menu-button"
+						title="Cadastrar Novo Médico">
+						<i class="fas fa-user-md menu-icon"></i>
+					</div>
+				</a> <a href="./settings.xhtml">
+					<div id="config" class="menu-button" title="Configurações">
+						<i class="fas fa-cogs menu-icon"></i>
+					</div>
+				</a>
+			</nav>
+
+			<section id="main-section">
+				<section id="new-doctor-section">
+					<h1 class="form-title">Cadastrar Novo Médico</h1>
+					<form action="#" method="post">
+						<div class="step" id="step1">
+							<label class="form-label-2" for="personal_info"><i
+								class="fas fa-caret-right"></i> Dados Pessoais</label>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="nome">Nome:</label> <input
+										class="form-input form-input-lg" type="text" id="nome"
+										name="nome"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="crm">CRM:</label> <input
+										class="form-input form-input-sm" type="text" id="crm"
+										name="crm"> </input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="data_nascimento">Data
+										de Nascimento:</label> <input class="form-input form-input-sm"
+										type="date" id="data_nascimento" name="data_nascimento"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="especialidade">Especialidade:</label>
+									<select class="form-input form-input-sm"
+										name="especialidade" id="especialidade">
+										<option value="alergologia">Alergologia</option>
+										<option value="anestesia">Anestesia</option>
+										<option value="cardiologia">Cardiologia</option>
+										<option value="pediatria">Pediatria</option>
+										<option value="geriatria">Geriatria</option>
+									</select>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="genero">Gênero:</label>
+									<select class="form-input form-input-sm " name="genero"
+										id="genero">
+										<option value="feminino">Feminino</option>
+										<option value="masculino">Masculino</option>
+										<option value="nao_binario">Não-Binário</option>
+										<option value="outro_genero">Outro (Especifique)</option>
+										<option value="prefiro_nao_responder">Prefiro não responder</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="cpf">CPF:</label> <input
+										class="form-input form-input-sm" type="text" id="cpf"
+										name="cpf"> </input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="telefone">Telefone
+										para Contato:</label> <input class="form-input form-input-sm "
+										type="tel" id="telefone" name="telefone"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="email">E-mail:</label> <input
+										class="form-input form-input-lg" type="email" id="email"
+										name="email"> </input>
+								</div>
+							</div>
+							<div class="button-div">
+								<button class="form-button-2" onclick="nextStep()" type="submit">
+									<i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="step" id="step2">
+							<label class="form-label-2" for="contato_emergencia"><i
+								class="fas fa-caret-right"></i> Contato de Emergência:</label>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="nome_emergencia">Nome:</label> <input
+										class="form-input form-input-lg" type="text"
+										id="nome_emergencia" name="nome_emergencia"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="telefone_emergencia">Telefone:</label>
+									<input class="form-input form-input-sm" type="tel"
+										id="telefone_emergencia" name="telefone_emergencia"></input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="parentesco_emergencia">Parentesco:</label>
+									<input class="form-input form-input-sm " type="text"
+										id="parentesco_emergencia" name="parentesco_emergencia"></input>
+								</div>
+							</div>
+							<br /> <label class="form-label-2" for="define_user"><i
+								class="fas fa-caret-right"></i> Defina seu usuário:</label>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="usuario">Usuário:</label> <input
+										class="form-input form-input-lg" type="text" id="usuario"
+										name="usuario"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="label-input">
+									<label class="form-label" for="senha">Senha:</label>
+									<input class="form-input form-input-sm" type="password"
+										id="senha" name="senha"></input>
+								</div>
+								<div class="label-input">
+									<label class="form-label right-label" for="confirmar_senha">Confirmar
+										Senha:</label> <input class="form-input form-input-sm" type="password"
+										id="confirmar_senha" name="confirmar_senha"></input>
+								</div>
+							</div>
+							<div class="button-div-2">
+								<button class="form-button-2" onclick="prevStep()" type="submit">
+									<i class="fas fa-arrow-left"></i>
+								</button>
+								<button class="form-button" onclick="nextStep()" type="submit">Cadastrar</button>
+							</div>
+						</div>
+					</form>
+				</section>
+			</section>
+		</div>
+	</h:body>
+</f:view>
+</html>
