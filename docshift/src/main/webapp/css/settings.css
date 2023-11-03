@@ -6,7 +6,7 @@
 	margin: 6rem 25rem;
 	align-items: center;
 	border: 1px solid rgba(0, 0, 0, 0.13);
-	background-color: #ffffff45;
+	background-color: var(--gray);
 	height: 30vh;
 	justify-content: space-between;
 	overflow-x: hidden	;

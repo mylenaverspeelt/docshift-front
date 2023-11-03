@@ -16,7 +16,7 @@
 	</h:head>
 
 	<h:body>
-		<div id="screen">
+		<div id="screen" class="screen-bg">
 			<nav id="aside-menu">
 				<a href="./home.xhtml">
 					<div id="home" class="menu-button" title="Pagina Inicial">
@@ -42,370 +42,372 @@
 			</nav>
 
 			<section id="main-section">
-				<section id="header-info">
-					<div class="header-info">
-						<div class="header-info-data">
-							<label class="label-title">Data:</label>
-							<p class="label-p"  id="current-date">01/01/2001</p>
+				<div id="home-section">
+					<section id="header-info">
+						<div class="header-info">
+							<div class="header-info-data">
+								<label class="label-title">Data:</label>
+								<p class="label-p" id="current-date">01/01/2001</p>
+							</div>
+
+							<div class="header-info-data">
+								<label class="label-title">Turno:</label>
+								<p class="label-p" id="current-shift">00:00h-23:59h</p>
+							</div>
+
+							<div class="header-info-data">
+								<label class="label-title">Médico Responsável:</label>
+								<p class="label-p" id="doctor">Pedro Henrique Sousa</p>
+							</div>
 						</div>
+						<div class="header-info">
+							<div class="header-info-data">
+								<label class="label-title">CRM:</label>
+								<p class="label-p" id="crm">5987 - PE</p>
+							</div>
 
-						<div class="header-info-data">
-							<label class="label-title">Turno:</label>
-							<p class="label-p" id="current-shift">00:00h-23:59h</p>
+							<div class="header-info-data">
+								<label class="label-title">Pacientes Internados:</label>
+								<p class="label-p" id="appointments">5</p>
+							</div>
+
+							<div class="header-info-data">
+								<label class="label-title">Tempo médio de espera:</label>
+								<p class="label-p" id="time">15min</p>
+							</div>
 						</div>
+						<div class="logo-div">
+							<img src="./logo-docshift-2.png" alt="DocShift Logo" class="logo" />
 
-						<div class="header-info-data">
-							<label class="label-title">Médico Responsável:</label>
-							<p class="label-p"  id="doctor">Pedro Henrique Sousa Ferreira Gonçalves</p>
 						</div>
-					</div>
-					<div class="header-info">
-						<div class="header-info-data">
-							<label class="label-title">CRM:</label>
-							<p class="label-p"  id="crm">5987 - PE</p>
+					</section>
+
+					<section id="patient-content">
+						<div class="content-overflow">
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
+
+							<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
+								toggleable="true" toggleSpeed="500" collapsed="true"
+								toggleableControl="none">
+								<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
+								<div class="content-card">
+									<h:panelGrid columns="2" cellpadding="5">
+										<h:outputText class="content-info"
+											value="Data de Nascimento: 01/01/2001"></h:outputText>
+										<h:outputText class="content-info"
+											value="Estado: Leve/Moderado"></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
+										<h:outputText class="content-info"
+											value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
+									</h:panelGrid>
+									<h:panelGrid columns="1" cellpadding="5">
+										<button class="content-button">
+											Mais detalhes <i class="fas fa-angle-double-right"></i>
+										</button>
+									</h:panelGrid>
+								</div>
+							</p:fieldset>
 						</div>
-
-						<div class="header-info-data">
-							<label class="label-title">Pacientes Internados:</label>
-							<p class="label-p"  id="appointments">5</p>
-						</div>
-
-						<div class="header-info-data">
-							<label class="label-title">Tempo médio de espera:</label>
-							<p class="label-p"  id="time">15min</p>
-						</div>
-					</div>
-					<div class="logo-div">
-						<img src="./logo-docshift-2.png" alt="DocShift Logo" class="logo" />
-
-					</div>
-				</section>
-
-				<section id="patient-content">
-					<div class="content-overflow">
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-
-						<p:fieldset legend="40028922 - Maria Luiza da Silva Sales Mendes"
-							toggleable="true" toggleSpeed="500" collapsed="true"
-							toggleableControl="none">
-							<p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" />
-							<div class="content-card">
-								<h:panelGrid columns="2" cellpadding="5">
-									<h:outputText class="content-info"
-										value="Data de Nascimento: 01/01/2001"></h:outputText>
-									<h:outputText class="content-info"
-										value="Estado: Leve/Moderado"></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação: Diporona 500mg às 09:18 "></h:outputText>
-									<h:outputText class="content-info"
-										value="Última Medicação administrada por: Maria Lucia Silva"></h:outputText>
-								</h:panelGrid>
-								<h:panelGrid columns="1" cellpadding="5">
-									<button class="content-button">
-										Mais detalhes <i class="fas fa-angle-double-right"></i>
-									</button>
-								</h:panelGrid>
-							</div>
-						</p:fieldset>
-					</div>
-				</section>
+					</section>
+				</div>
 			</section>
 		</div>
 	</h:body>
